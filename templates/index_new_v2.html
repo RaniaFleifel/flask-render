@@ -19,7 +19,12 @@
 
 	<h2>Please enter the loan amount</h1>
 
+ <form action="{{ url_for('amount')}}" method="post">
+      <input type="text" name="v" placeholder="loan amount (egp)" required="required" />
+      <button type="submit" class="btn btn-primary btn-block btn-large"> Start calculations </button>
 
+  <br>
+  <br>
 
 
   </div>
