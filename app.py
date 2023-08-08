@@ -1,5 +1,7 @@
 from flask import Flask,render_template,request
 from datetime import datetime, timedelta
+import pandas as pd
+from tabulate import tabulate
 
 app = Flask(__name__)
 a=[]
