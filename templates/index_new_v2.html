@@ -28,7 +28,23 @@
 </form>
 
 {{ loan_size_txt }} 
+<form action="{{ url_for('freq')}}" method="post">
 
+	<h2>Please enter the preferred frequency of payement</h2>
+        <select name="option">
+		<option value=" "></option>
+            <option value="weekly">weekly</option>
+            <option value="biweekly">biweekly</option>
+            <option value="monthly">monthly</option>
+        </select>
+        <input type="submit" value="enter">
+ <br>
+  <br>
+    </form>
+
+{{ loan_size_txt }} 
+<br>
+{{ frequency_txt }} 
   </div>
 </body>
 
