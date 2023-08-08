@@ -45,6 +45,22 @@
 {{ loan_size_txt }} 
 <br>
 {{ frequency_txt }} 
+
+	  <form action="{{ url_for('grace_period')}}" method="post">
+
+	<h2>Do you want a grace period? </h2>
+        <select name="option">
+		<option value=" "></option>
+		<option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select>
+        <input type="submit" value="enter">
+    </form>
+{{ loan_size_txt }} 
+<br>
+{{ frequency_txt }} 
+<br>
+{{ options_txt }} 
   </div>
 </body>
 
